@@ -1,0 +1,263 @@
+        material: REDSTONE
+        slot: 17
+        data:
+          value: 1.0
+    f:
+      tribute:
+        name: '&7Tribute:&c ${tribute}'
+        lore:
+        - '&7The defending land will need to'
+        - '&7to pay this value in order to'
+        - '&7surrender.'
+        - ' '
+        - '&8- &7The maximum tribute for '
+        - '  &7this land is&3 ${max}&7.'
+        - '  &7A server administrator can'
+        - '  &7change that in the config.'
+        - ' '
+        - '&cNOTE: &7If you set the tribute'
+        - '&7value to 0, the defending land'
+        - '&7won''t be able to surrender.'
+        material: GOLD_INGOT
+        slot: 14
+      send-declaration:
+        name: '&aSend War Declaration'
+        lore:
+        - '&7Click here to send this'
+        - '&7war declaration to the'
+        - '&7enemy.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+        slot: 27
+      abort-declaration:
+        name: '&cAbort War Declaration'
+        lore:
+        - '&7Click here to abort this'
+        - '&7war declaration.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+        slot: 19
+      back:
+        name: '&cBack'
+        lore:
+        - '&7Go back to'
+        - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 19
+    a:
+      max-tribute:
+        name: '&4Max Value reached'
+        lore:
+        - '&7You can''t set the tribute'
+        - '&7value higher than&3 {max}&7.'
+        - ' '
+        - '&8- &7You can ask an administrator'
+        - '  &7to change this.'
+    p:
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 1
+        to: 27
+  nation:
+    title: '&8{level} {nation}'
+    size: 36
+    f:
+      back:
+        name: '&cBack'
+        lore:
+        - '&7Go back to'
+        - '&e{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 28
+      close:
+        name: '&cClose'
+        lore:
+        - '&7Close this menu.'
+        - ' '
+        - '&8- &7You can open it again'
+        - '  &7with &8/&3Nation menu&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 9
+      war:
+        name: '&8> &cCurrent War'
+        lore:
+        - '&7Get some information'
+        - '&7about the current war.'
+        - ' '
+        - '&7Show information about:'
+        - '&8- &7The enemy nation'
+        - '&8- &7Reward price'
+        material: IRON_SWORD
+        slot: 15
+      no-war:
+        name: '&8> &aPeaceful'
+        lore:
+        - '&7Your nation isn''t engaged'
+        - '&7in any war. Everything is'
+        - '&7peaceful.'
+        material: WOODEN_SWORD
+        slot: 15
+      inbox:
+        name: '&8> &6Inbox &8(&7{amount}&8)'
+        lore:
+        - '&7Click to open advanced view.'
+        - ' '
+        - '&7Received messages:'
+        - '{inbox}'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJmM2ZjZGNjZmZkOTYzZTQzMzQ4MTgxMDhlMWU5YWUzYTgwNTY2ZDBkM2QyZDRhYjMwNTFhMmNkODExMzQ4YyJ9fX0=
+        slot: 16
+      stats:
+        name: '&8> &6Statistics'
+        lore:
+        - '&7Total members: {0}'
+        - ' '
+        - '&7Level'
+        - '&7Current: {1}'
+        - ' &7{2} claims for each land'
+        - ' '
+        - '&7Next: {3} &7({4} members)'
+        - ' &a{5} claims for each land'
+        - ' '
+        - '&7Economy'
+        - '&8- &7Nation'
+        - '  &7Balance: ${6}'
+        - '  &7Nation pays&c ${7} &7upkeep'
+        - '  &7in {8}.'
+        - ' '
+        - '&8- &4Your land &8({9})'
+        - '  &7Upkeep of&c ${10} &7to the'
+        - '  &7nation in {11}.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmYWZmYThjNmM3ZjYyNjIxNjgyZmU1NjcxMWRjM2I4OTQ0NjVmZGY3YTYyZjQzYjMxYTBkMzQwM2YzNGU3In19fQ==
+        slot: 17
+    s:
+      information:
+        name: '&6Information'
+        lore:
+        - '&7Here you can view'
+        - '&7some detailed information'
+        - '&7about your nation. This helps'
+        - '&7to keep track of all events'
+        - '&7in your nation.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU3NDcwMTBkODRhYTU2NDgzYjc1ZjYyNDNkOTRmMzRjNTM0NjAzNTg0YjJjYzY4YTQ1YmYzNjU4NDAxMDVmZCJ9fX0=
+        slot: 11
+      lands:
+        name: '&8> &6Lands'
+        lore:
+        - '&7View all lands, which are'
+        - '&7a member in this nation'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0OWI5MzE4ZTMzMTU4ZTY0YTQ2YWIwZGUxMjFjM2Q0MDAwMGUzMzMyYzE1NzQ5MzJiM2M4NDlkOGZhMGRjMiJ9fX0=
+        slot: 13
+      spawn:
+        name: '&8> &6Spawn'
+        lore:
+        - '&7Click here to teleport'
+        - '&7to the capitals spawn.'
+        material: ENDER_PEARL
+        slot: 14
+      management:
+        name: '&6Management'
+        lore:
+        - '&7Here you can manage your nation.'
+        - '&7You can setup nation taxes,'
+        - '&7edit land flags or set taxes.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDYxODU0ODFkNWIxYzg1OTMwYjNmOTlkMjMyMTY3NCJ9fX0=
+        slot: 20
+      taxes:
+        name: '&8> &6Taxes'
+        lore:
+        - '&7Configure taxes for'
+        - '&7lands of your nation.'
+        material: GOLD_INGOT
+        slot: 22
+    p:
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 1
+        to: 36
+      placeholder_2:
+        material: BLUE_STAINED_GLASS_PANE
+        from: 12
+        to: 12
+      placeholder_3:
+        material: BLUE_STAINED_GLASS_PANE
+        from: 21
+        to: 21
+  nation_lands:
+    title: '&8Nation Members'
+    size: 36
+    f:
+      back:
+        name: '&cBack'
+        lore:
+        - '&7Go back to'
+        - '{back}&7.'
+        material: RED_STAINED_GLASS_PANE
+        slot: 28
+      page_previous:
+        name: '&9Previous Page'
+        lore:
+        - '&7Go to previous page:&9 {previous}'
+        - '&7Current:&3 {current}'
+        material: ARROW
+        slot: 30
+      page_next:
+        name: '&aNext Page'
+        lore:
+        - '&7Go to next page:&9 {next}'
+        - '&7Current:&3 {current}'
+        material: ARROW
+        slot: 35
+      trust:
+        name: '&8> &aInvite Land'
+        lore:
+        - '&7Click here to trust'
+        - '&7a land to join your nation.'
+        - ' '
+        - '&7Available:&3 {lands} &8/&c {max}'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTkyZTMxZmZiNTljOTBhYjA4ZmM5ZGMxZmUyNjgwMjAzNWEzYTQ3YzQyZmVlNjM0MjNiY2RiNDI2MmVjYjliNiJ9fX0=
+        slot: 32
+      untrust:
+        name: '&8> &cUntrust Land'
+        lore:
+        - '&7Click here to untrust'
+        - '&7a land from your nation.'
+        material: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
+        slot: 33
+    l:
+      object:
+        name: '&2{level} {land}'
+        lore:
+        - '&7Open the land information'
+        - '&7menu of this land.'
+        - ' '
+        - '&9RIGHT CLICK'
+        - '&7Get more information'
+        - '&7about this land.'
+        - ' '
+        - '&8- &7Title:'
+        - '  &7{title}'
+        material: PLAYER_HEAD
+        from: 10
+        to: 27
+      capital:
+        name: '&4Capital {land}'
+        lore:
+        - '&7Open the land information'
+        - '&7menu of this land.'
+        - ' '
+        - '&9RIGHT CLICK'
+        - '&7Get more information'
+        - '&7about this land.'
+        - ' '
+        - '&8- &7Title:'
+        - '  &7{title}'
+        material: PLAYER_HEAD
+        from: 10
+        to: 27
+    p:
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 1
+        to: 9
+      placeholder_2:
+        material: GRAY_STAINED_GLASS_PANE
+        from: 29
+        to: 36
